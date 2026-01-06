@@ -1,8 +1,10 @@
 # REDACTED (Intentional Omissions)
 
-This repository is a **public architecture & interfaces showcase** extracted from a private production codebase.
+This repository (**react-native-pdf-editor-architecture**) is a **public architecture & interfaces showcase** extracted from a private production codebase.
 
 It is intentionally **non-runnable**. The goal is to publish the *shape* of the system (contracts, DTOs, orchestration flow) while withholding proprietary implementation and customer-specific artifacts.
+
+> This repo is meant for **code review / hiring / contract conversations**, not “npm install and run”.
 
 ---
 
@@ -30,7 +32,7 @@ It is intentionally **non-runnable**. The goal is to publish the *shape* of the 
 🚫 **Geometry / cropbox / rotation math**
 - Cropbox normalization, coordinate transforms, axis flips, rotation handling
 - Any heuristics that correct PDF coordinate space vs viewport space
-- Any functions similar to “adjustYWithCropBox”, “percentFromPixelsWithRotation”, etc.
+- Any functions similar to `adjustYWithCropBox`, `percentFromPixelsWithRotation`, etc.
 
 🚫 **Signature internals**
 - Signature image composition, scaling, anchoring, masking, clearing strategy
@@ -59,7 +61,8 @@ It is intentionally **non-runnable**. The goal is to publish the *shape* of the 
 ## Why this matters
 
 The omitted items above represent **competitive differentiation** and/or **customer-confidential material**.
-This repo is designed to be reviewed like a system design/architecture artifact.
+
+This repo is designed to be reviewed like a **system design / architecture artifact**.
 
 ---
 
